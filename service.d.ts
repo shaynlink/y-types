@@ -1,4 +1,4 @@
-import type { UserMe, UserWithPassword } from './users';
+import type { UserMe, UserWithPassword, BaseUser } from './users';
 
 export interface ServiceResponse<D> {
   error: null | ServiceResponseError;
@@ -7,6 +7,7 @@ export interface ServiceResponse<D> {
 
 export interface ServiceResponseError {
   message: string;
+  extra?: Record<string, any>;
 }
 
 export interface AuthorizationSignRequest {
