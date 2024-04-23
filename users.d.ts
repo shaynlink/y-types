@@ -6,7 +6,7 @@ export interface BaseUser {
   picture?: string;
 }
 
-export interface UserMe implements BaseUser {
+export interface UserMe extends BaseUser {
   email: string;
 }
 
