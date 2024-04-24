@@ -23,7 +23,7 @@ export interface AuthorizationVerifyRequest {
   token: string;
 }
 export interface AuthorizationVerifyResponse extends ServiceResponse<{
-  validate: true;
+  valide: true;
   decoded: {
     iat: number;
     exp: number;
